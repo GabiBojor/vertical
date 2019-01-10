@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+  }
+
+.banner {
+    background-image: url("../images/banner.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .v-align {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+  }
+
+  
