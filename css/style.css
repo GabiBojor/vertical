@@ -191,8 +191,8 @@ CUSTOM ELEMENTS
 
 .icon-scroll:before{
     position: absolute;
+content: '';
   left: 50%;
-  content: '';
   width: 8px;
   height: 8px;
   background: #7d7d7d;
