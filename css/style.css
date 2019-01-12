@@ -106,11 +106,16 @@ CUSTOM ELEMENTS
 }
 .parallax {
     background-attachment: fixed;
-    background-image: url("../images/home-banner.png");
+    background-image: url("../images/home-banner3.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
     position: relative;
+}
+.geometric {
+    background: url(../images/geometric.png);
+        background-repeat: no-repeat;
+    background-size: cover;
 }
 .parallax  .v-align .row {
     width: 1440px;
