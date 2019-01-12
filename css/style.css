@@ -108,7 +108,7 @@ CUSTOM ELEMENTS
 }
 .parallax {
     background-attachment: fixed;
-    background-image: url("../images/home-banner3.png");
+    background-image: url("../images/home-banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -208,6 +208,45 @@ content: '';
   100% {opacity: 0;
        transform: translateY(46px);}
     }
+    /*-- voucher --*/
+    .voucher-page {
+      position: relative;
+     background: url('../images/voucher.png');
+    padding: 50px 15px;
+    text-align: center;
+    min-height: 100vh;
+}
+.voucher-page img{
+ width: auto;
+}
+.voucher-page h1{
+  font-size: 65px;
+  line-height: 75px;
+  margin: 40px auto;
+}
+.type-wrap{
+  color: #8369c4;
+}
+.voucher-page h2 span{
+ color: #8369c4;
+ font-size: 65px;
+ font-weight: bold;
+}
+.voucher-page input.inp {
+  display: block;
+    background: #ebebeb;
+    box-shadow: 0px 2px 5px #000;
+    border: none;
+    width: 600px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px auto 50px;
+}
+.voucher-page input.btn{
+  width: 200px;
+   border-radius: 20px;
+}
 /*------
 RESPONSIVE CSS
 ------ */
