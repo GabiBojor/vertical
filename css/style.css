@@ -115,7 +115,7 @@ CUSTOM ELEMENTS
 .geometric {
     background: url(../images/geometric.png);
         background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 99%;
 }
 .parallax  .v-align .row {
     width: 1440px;
