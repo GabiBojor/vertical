@@ -112,10 +112,39 @@ CUSTOM ELEMENTS
     min-height: 100vh;
     position: relative;
 }
-.geometric {
+.geometric{
+  position: relative;
+}
+.geometric::before {
+  z-index: -1;
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
     background: url(../images/geometric.png);
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 99%;
+   -webkit-animation-name: rotate;
+  -webkit-animation-duration: 160s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-name: rotate;
+  -moz-animation-duration: 160s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-timing-function:linear;
+}
+
+
+@-webkit-keyframes rotate {
+  from {-webkit-transform:rotate(0deg);}
+  to {  -webkit-transform:rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+  from {-moz-transform:rotate(0deg);}
+  to {  -moz-transform:rotate(360deg);}
 }
 .parallax  .v-align .row {
     width: 1440px;
