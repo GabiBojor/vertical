@@ -254,6 +254,13 @@ content: '';
   width: 200px;
    border-radius: 20px;
 }
+.voucher-page input.btn:focus, .voucher-page input.btn:visited, .voucher-page input.btn:active{
+  background: rgb(165,106,184); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(165,106,184,1) 7%, rgba(140,105,194,1) 36%, rgba(97,105,209,1) 65%, rgba(81,104,215,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(165,106,184,1) 7%,rgba(140,105,194,1) 36%,rgba(97,105,209,1) 65%,rgba(81,104,215,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(165,106,184,1) 7%,rgba(140,105,194,1) 36%,rgba(97,105,209,1) 65%,rgba(81,104,215,1) 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a56ab8', endColorstr='#5168d7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
 .voucher-page form span{
   color: #8369c4;
   margin-bottom: 70px;
