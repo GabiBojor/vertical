@@ -55,9 +55,7 @@ TOP PART
     top: 50px;
     z-index: 99;
 }
-.container-top .custom-container{
-  width: 1600px;
-}
+
 
 
 
@@ -102,20 +100,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 CUSTOM ELEMENTS
 ------*/
 .custom-container{
-  width: 1280px;
+  width: 1360px;
   max-width: 100%;
   margin: 0 auto;
 }
 .parallax {
     background-attachment: fixed;
-    background-image: url("../images/home-banner2.png");
+    background-image: url("../images/home-banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
     position: relative;
 }
 .parallax  .v-align .row {
-    width: 1280px;
+    width: 1360px;
     max-width: 100%;
     margin: 0 auto;
 }
