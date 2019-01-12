@@ -108,7 +108,7 @@ CUSTOM ELEMENTS
 }
 .parallax {
     background-attachment: fixed;
-    background-image: url("../images/home-banner.png");
+    background-image: url("../images/home-banner2.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -124,14 +124,14 @@ CUSTOM ELEMENTS
 }
 .banner-text h1{
   color: #4a4a4a;
-  font-size: 60px;
-  line-height: 65px;
+  font-size: 40px;
+  line-height: 50px;
 }
 .banner-text h2{
    color: #4a4a4a;
   font-weight: bold;
-     font-size: 60px;
-  line-height: 65px;
+  font-size: 40px;
+  line-height: 50px;
   margin-bottom: 30px;
 }
 .laptop {
