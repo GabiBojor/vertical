@@ -70,11 +70,36 @@
   /*------
   FOOTER 
   ------*/
-.footer{
-  background: #f7f7f7;
-  padding: 30px 0;
-}
-
+  .footer{
+    background: #f7f7f7;
+    padding: 30px 0;
+    font-size: 25px;
+  }
+  .footer .row > div:nth-child(2n+1) {
+    padding: 20px 15px;
+  }
+  .footer img {
+    width: auto;
+  }
+  .footer a{
+    color: #6b68cd;
+  }
+  .social-media {
+    display: inline-block;
+  }
+  .social-media a{
+    font-size: 25px;
+    margin: 0 5px;
+  }
+  .footer a i{
+    background: rgb(165,106,184); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(165,106,184,1) 7%, rgba(140,105,194,1) 36%, rgba(97,105,209,1) 65%, rgba(81,104,215,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(165,106,184,1) 7%,rgba(140,105,194,1) 36%,rgba(97,105,209,1) 65%,rgba(81,104,215,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(165,106,184,1) 7%,rgba(140,105,194,1) 36%,rgba(97,105,209,1) 65%,rgba(81,104,215,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a56ab8', endColorstr='#5168d7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 
   /*------
@@ -348,6 +373,69 @@
     .portfolio-container > div:hover img{
       -webkit-filter: grayscale(0); 
       filter: grayscale(0);
+    }
+    .testimonials{
+      padding: 100px 0;
+      background: rgb(165,106,184); /* Old browsers */
+      background: -moz-linear-gradient(-45deg, rgba(165,106,184,1) 7%, rgba(140,105,194,1) 36%, rgba(97,105,209,1) 65%, rgba(81,104,215,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg, rgba(165,106,184,1) 7%,rgba(140,105,194,1) 36%,rgba(97,105,209,1) 65%,rgba(81,104,215,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg, rgba(165,106,184,1) 7%,rgba(140,105,194,1) 36%,rgba(97,105,209,1) 65%,rgba(81,104,215,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a56ab8', endColorstr='#5168d7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    .testimonials-slider{
+      background: transparent;
+      margin: 0;
+      border: none;
+    }
+    .testimonials-slider .flex-direction-nav{
+      display: none;
+    }
+    .testimonials-slider ul.slides li img{
+      width: auto;
+    }
+    .testimonial_wrap {
+      display: inline-block;
+      vertical-align: top;
+      width: 30%;
+      color: #fff;
+      background: url('../images/quote.png') no-repeat;
+  background-position: 124px 20px;
+
+padding: 50px 0;
+    }
+    .testimonial_wrap:nth-child(2){
+      margin: 0 50px;
+    }
+    .testimonials-slider .flex-control-paging li a:hover, .testimonials-slider .flex-control-paging li a.flex-active{
+      background: #fff;
+    }
+    .testimonials-slider .flex-control-paging li a{
+      background: rgba(255,255,255,0.6);
+    }
+    .testimonials-slider .flex-control-nav{
+      bottom: -75px;
+    }
+    .testimonial_wrap > div {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .testimonial_image{
+      width: 30%;
+    }
+    .testimonial_info{
+      width: 69%;
+    }
+    .testimonial_info{
+      font-size: 26px;
+      line-height: 30px;
+    }
+    .testimonial_name{
+      font-size: 28px;
+      margin-top: 30px;
+    }
+    .testimonial_role{
+      color: #ccade8;
+      font-size: 18px;
     }
   /*------
   RESPONSIVE CSS
