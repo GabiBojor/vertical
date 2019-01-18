@@ -3,8 +3,8 @@ $(document).ready(function(){
 	if($('.parallax').length > 0){
 		$('.parallax').parallax();
 	}
-	
-	$(".type-wrap").typed({
+	if($('.type-wrap').length > 0){
+      $(".type-wrap").typed({
   strings: ["website?", "logo?", "orice alt design?"],
   stringsElement: null,
   typeSpeed: 0,
@@ -22,4 +22,6 @@ $(document).ready(function(){
   attr: null,
   contentType: 'html'
 });
+  }
+
 })
