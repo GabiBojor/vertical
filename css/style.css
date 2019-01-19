@@ -73,7 +73,7 @@
   .footer{
     background: #f7f7f7;
     padding: 30px 0;
-    font-size: 25px;
+    font-size: 16px;
   }
   .footer .row > div:nth-child(2n+1) {
     padding: 20px 15px;
@@ -88,7 +88,7 @@
     display: inline-block;
   }
   .social-media a{
-    font-size: 25px;
+    font-size: 20px;
     margin: 0 5px;
   }
   .footer a i{
@@ -113,7 +113,7 @@
     color: #6f6f6f;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   ul#nav > li, ul#nav_mobile > li {
@@ -425,16 +425,16 @@ padding: 50px 0;
       width: 69%;
     }
     .testimonial_info{
-      font-size: 26px;
-      line-height: 30px;
+      font-size: 18px;
+      line-height: 20px;
     }
     .testimonial_name{
-      font-size: 28px;
+      font-size: 20px;
       margin-top: 30px;
     }
     .testimonial_role{
       color: #ccade8;
-      font-size: 18px;
+      font-size: 16px;
     }
   /*------
   RESPONSIVE CSS
