@@ -27,7 +27,7 @@
   .btn {
     color: #fff;
     font-weight: lighter;
-    font-size: 19px;
+    font-size: 16px;
     padding: 6px 50px;
     border-radius: 10px;
     box-shadow: -8px 8px 28px #575757;
@@ -135,6 +135,11 @@
     max-width: 100%;
     margin: 0 auto;
   }
+
+  .custom-container a{
+    margin-top: 80px;
+  }
+  
   .pad{
     padding: 100px 0;
   }
@@ -297,6 +302,7 @@
     }
     .services{
       background: url(../images/services-bg.png);
+      background-repeat: no-repeat;
     }
     .page_title{
       text-align: center;
@@ -316,14 +322,14 @@
       text-align: center;
     }
     .services-container > div {
-      border-radius: 5px;
+      border-radius: 10px;
       display: inline-block;
       vertical-align: top;
       width: 310px;
       background: #ffff;
       box-shadow: 0px 0px 5px #ddd;
       text-align: center;
-      padding: 50px 25px;
+      padding: 50px 40px;
     }
     .services-container > div:nth-child(2){
       margin: 0 17%;
