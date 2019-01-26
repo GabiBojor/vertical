@@ -129,7 +129,7 @@
   /*------
   CUSTOM ELEMENTS
   ------*/
- 
+
   .custom-container{
     width: 1440px;
     max-width: 100%;
@@ -306,12 +306,12 @@
       margin-bottom: 70px;
     }
     .page_title   span {
-    display: block;
-    color: #919191;
-    font-size: 20px;
-    font-weight: lighter;
-    margin-top: 15px;
-}
+      display: block;
+      color: #919191;
+      font-size: 20px;
+      font-weight: lighter;
+      margin-top: 15px;
+    }
     .services{
       text-align: center;
     }
@@ -353,7 +353,7 @@
     .portfolio-container{
       text-align: center;
     }
-    .portfolio-container > div {
+    .portfolio-container > a {
       padding: 50px 30px;
       border-radius: 15px;
       box-shadow: 0px 0px 25px #ddd;
@@ -363,13 +363,13 @@
       background: #ffff;
       margin-right: 50px;
     }
-    .portfolio-container > div:nth-child(4n){
+    .portfolio-container > a:nth-child(4n){
       margin-right: 0;
     }
-    .portfolio-container > div:nth-child(-n+6){
+    .portfolio-container > a:nth-child(-n+6){
       margin-bottom: 50px;
     }
-    .portfolio-container > div img{
+    .portfolio-container > a img{
       -webkit-transition: all 0.5s ease-out;  
       -moz-transition: all 0.5s ease-out;   
       -o-transition: all 0.5s ease-out;  
@@ -378,7 +378,7 @@
       -webkit-filter: grayscale(100%); 
       filter: grayscale(100%);
     }
-    .portfolio-container > div:hover img{
+    .portfolio-container > a:hover img{
       -webkit-filter: grayscale(0); 
       filter: grayscale(0);
     }
@@ -448,89 +448,184 @@
       font-size: 16px;
     }
     .home-contact img {
-    width: 495px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-/*-- contact us --*/
-#contact {
-    padding-top: 11%;
-    min-height: calc(100vh - 127px);
-}
-.find-us {
-    background: #fff;
-    box-shadow: 0 0 5px #ccc;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px 15px;
-    z-index: 9;
-    width: 340px;
-    margin: 0 auto;
-}
-.find-us-bg{
-  position: relative;
-  padding: 50px 15px;
-}
-.find-us-bg::after {
-    position: absolute;
-    content: '';
-    background: url(../images/contact-bg.png) no-repeat;
-    background-size: auto;
-    top: -30px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-}
-.find-us > b{
-  font-size: 24px;
-  color: #9069bf;
-  display: block;
-  margin-bottom: 20px;
-}
-.find-us > div {
-    margin-bottom: 15px;
-}
-.find-us > div b{
-  color: #9169bf;
-  display: block;
-}
-.find-us > div span{
-  display: block;
-  width: 160px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-.find-us > div span a{
-  color: #282828;
-}
-.contact-form{
-  width: 600px;
-  max-width: 100%;
-  display: inline-block;
-}
-.custom-label label {
+      width: 495px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .home-contact .contact-form{
+      margin: 0;
+    }
+    /*-- contact us --*/
+    #small-content {
+      padding: 10% 0;
+      min-height: calc(100vh - 127px);
+    }
+    .find-us {
+      background: #fff;
+      box-shadow: 0 0 5px #ccc;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px 15px;
+      z-index: 9;
+      width: 340px;
+      margin: 0 auto;
+    }
+    .find-us-bg{
+      position: relative;
+      padding: 50px 15px;
+    }
+    .find-us-bg::after {
+      position: absolute;
+      content: '';
+      background: url(../images/contact-bg.png) no-repeat;
+      background-size: auto;
+      top: -30px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+    .find-us > b{
+      font-size: 24px;
+      color: #9069bf;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .find-us > div {
+      margin-bottom: 15px;
+    }
+    .find-us > div b{
+      color: #9169bf;
+      display: block;
+    }
+    .find-us > div span{
+      display: block;
+      width: 160px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .find-us > div span a{
+      color: #282828;
+    }
+    .contact-form{
+      width: 600px;
+      max-width: 100%;
+      display: inline-block;
+      margin-top: 47px;
+    }
+    .custom-label label {
+      display: block;
+      text-align: left;
+      color: #9069bf;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+    }
+    .custom-label {
+      margin-bottom: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+      border: 1px solid #555555;
+      display: block;
+      width: 100%;
+      border-radius: 15px;
+      padding: 5px 10px;
+    }
+    .contact-form textarea {
+      min-height: 165px;
+    }
+    /*-- portfolio --*/
+    #portfolio {
+      background: url(../images/portofoliu.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .portfolio-content > a {
+      padding: 50px 30px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 25px #ddd;
+      display: inline-block;
+      width: 22%;
+      vertical-align: top;
+      background: #ffff;
+      margin-right: 50px;
+      position: relative;
+    }
+    .portfolio-content > a:nth-child(4n){
+      margin-right: 0;
+    }
+    .portfolio-content > a:nth-child(-n+6){
+      margin-bottom: 50px;
+    }
+    .portfolio-content > a::after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      background: rgba(101,171,200,0.9);
+      border-radius: 15px;
+      transform: scale(0);
+      transition: 0.3s all ease-out;
+    }
+    .portfolio-overlay{
+      position: absolute;
+      transform: translateY(-50%) scale(0);
+      top: 50%;
+      left: 0;
+      right: 0;
+      z-index: 9;
+      transition: 0.3s all ease-out;
+    }
+    .portfolio-content > a:hover::after {
+      transform: scale(1);
+      transition: 0.5s all ease-out;
+    }
+    .portfolio-content > a:hover .portfolio-overlay{
+      transform: translateY(-50%) scale(1);
+      transition: 0.5s all ease-out;
+    }
+    .portfolio-overlay b {
+      display: block;
+      font-size: 16px;
+      line-height: 16px;
+    }
+    .portfolio-overlay span{
+      font-size: 12px;
+    }
+    #all-projects {
     display: block;
-    text-align: left;
-    color: #9069bf;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
 }
-.custom-label {
-    margin-bottom: 15px;
+.portfolio-content{
+  display: none;
 }
-.contact-form input, .contact-form textarea {
-    border: 1px solid #555555;
-    display: block;
-    width: 100%;
-    border-radius: 15px;
-    padding: 5px 10px;
+.projects-menu {
+    margin-bottom: 40px;
 }
- .contact-form textarea {
-min-height: 165px;
+.projects-menu > a{
+    background: rgb(81,104,215); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(81,104,215,1) 0%, rgba(97,105,209,1) 35%, rgba(140,105,194,1) 64%, rgba(165,106,184,1) 93%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(81,104,215,1) 0%,rgba(97,105,209,1) 35%,rgba(140,105,194,1) 64%,rgba(165,106,184,1) 93%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(81,104,215,1) 0%,rgba(97,105,209,1) 35%,rgba(140,105,194,1) 64%,rgba(165,106,184,1) 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5168d7', endColorstr='#a56ab8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    margin: 0 50px 0 0;
+    color: #fff;
 }
-
+.projects-menu > a:last-child{
+  margin-right: 0;
+}
+.projects-menu > a:hover{
+    background: rgb(165,106,184); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(165,106,184,1) 7%, rgba(140,105,194,1) 36%, rgba(97,105,209,1) 65%, rgba(81,104,215,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(165,106,184,1) 7%,rgba(140,105,194,1) 36%,rgba(97,105,209,1) 65%,rgba(81,104,215,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(165,106,184,1) 7%,rgba(140,105,194,1) 36%,rgba(97,105,209,1) 65%,rgba(81,104,215,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a56ab8', endColorstr='#5168d7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+#portfolio .page_title{
+  margin: 0 auto 40px;
+  padding-top: 150px;
+}
   /*------
   RESPONSIVE CSS
   ------ */

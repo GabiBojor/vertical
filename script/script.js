@@ -1,4 +1,15 @@
   $(document).ready(function(){
+    $('.projects-menu > a').each(function() {
+      $(this).click(function(e) {
+        e.preventDefault();
+        var link = $(this).attr('rel');
+        $('.active-event').removeClass('active-event');
+        $(this).addClass('active-event');
+        $('.event-type').hide();
+        $('div#' + link).fadeIn();
+      });
+      $('#dynamic_form_639 .btn').attr('value', 'SUBSCRIBE');
+    });
     if($('.testimonials-slider').length > 0){
       $('.testimonials-slider').flexslider({
         animation: 'slide'
