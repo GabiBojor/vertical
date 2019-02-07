@@ -136,7 +136,7 @@ li.has_submenu ul{
   ------*/
 
   .custom-container{
-    width: 1440px;
+    width: 1280px;
     max-width: 100%;
     margin: 0 auto;
   }
@@ -639,6 +639,14 @@ li.has_submenu ul{
     background: -webkit-linear-gradient(-45deg, rgba(81,104,215,1) 0%,rgba(97,105,209,1) 35%,rgba(140,105,194,1) 64%,rgba(165,106,184,1) 93%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, rgba(81,104,215,1) 0%,rgba(97,105,209,1) 35%,rgba(140,105,194,1) 64%,rgba(165,106,184,1) 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5168d7', endColorstr='#a56ab8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.services_bg .custom-label label{
+  color: #fff;
+}
+.services_bg .left-container::after {
+    background: url(../images/services_bg.png) no-repeat;
+    z-index: 9;
+    top: 0px;
 }
   /*------
   RESPONSIVE CSS
