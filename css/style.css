@@ -168,11 +168,11 @@ li.has_submenu ul{
     background-repeat: no-repeat;
     background-size: 99%;
     -webkit-animation-name: rotate;
-    -webkit-animation-duration: 200s;
+    -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:linear;
     -moz-animation-name: rotate;
-    -moz-animation-duration: 200s;
+    -moz-animation-duration: 10s;
     -moz-animation-iteration-count:infinite;
     -moz-animation-timing-function:linear;
   }
@@ -682,11 +682,13 @@ li.has_submenu ul{
 }
     .geometric{
       text-align: right;
+      overflow: hidden;
     }
     .geometric::before {
-    width: 80%;
-    top: 15px;
+    width: 75%;
+    top: 0;
     background-size: 100%;
+    margin: 0 auto;
 }
 .container-top .row > div, .container-fluid, .navbar.navbar-default.navbar-inverse {
     padding: 0;
