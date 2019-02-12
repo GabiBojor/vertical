@@ -440,9 +440,7 @@ li.has_submenu ul{
       width: 30%;
     }
     .testimonial_info{
-      width: 69%;
-    }
-    .testimonial_info{
+           width: 69%;
       font-size: 18px;
       line-height: 20px;
     }
@@ -651,11 +649,72 @@ li.has_submenu ul{
   /*------
   RESPONSIVE CSS
   ------ */
-
+@media (max-width: 1680px){
+  .geometric::before{
+    width: 90%;
+  }
+}
   @media (max-width: 1440px){
-
+  .custom-container, .parallax .v-align .row{
+    width: 1280px;
+  }
+  .services-container > div:nth-child(2){
+    margin: 0 5%;
+  }
+  .testimonial_info{
+    width: 65%;
+  }
+  .portfolio-container > a{
+    width: 20%;
+    padding: 30px;
+  }
   }
   @media (max-width: 1280px){
+    .home-contact .row > div {
+    padding: 0;
+}
+.home-contact .row > div.center{
+  text-align: right;
+}
+.portfolio-container > a {
+    width: 21.7%;
+    padding: 20px;
+}
+    .geometric{
+      text-align: right;
+    }
+    .geometric::before {
+    width: 80%;
+    top: 15px;
+    background-size: 100%;
+}
+.container-top .row > div, .container-fluid, .navbar.navbar-default.navbar-inverse {
+    padding: 0;
+}
+#main_nav {
+    margin: 10px 0;
+}
+.laptop {
+    margin: 90px auto;
+    width: 90%;
+}
+.custom-container {
+  padding: 0 15px;
+}
+     .custom-container.pad{
+      padding: 100px 15px;
+    }
+    .testimonial_wrap:nth-child(2){
+      margin: 0;
+    }
+    .testimonials-slider ul.slides > li{
+      text-align: center;
+    }
+    .testimonial_info{
+      width: 59%;
+      text-align: left;
+      margin-left: 10px;
+    }
 
   }
   @media (max-width: 1024px){

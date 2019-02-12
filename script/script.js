@@ -5,7 +5,7 @@
         var link = $(this).attr('rel');
         $('.active-event').removeClass('active-event');
         $(this).addClass('active-event');
-        $('.event-type').hide();
+        $('.portfolio-content').hide();
         $('div#' + link).fadeIn();
       });
       $('#dynamic_form_639 .btn').attr('value', 'SUBSCRIBE');
