@@ -119,16 +119,16 @@
   ul#nav > li, ul#nav_mobile > li {
     padding: 0 15px;
   }
-li.has_submenu ul{
-  min-width: 100px;
-  box-shadow: 0 0 2px #ccc;
-}
+  li.has_submenu ul{
+    min-width: 100px;
+    box-shadow: 0 0 2px #ccc;
+  }
   ul#nav > li > a:hover, ul#nav_mobile > li > a:hover, ul#nav > li.onstate > a, ul#nav_mobile > li.onstate > a, li.has_submenu ul a:hover{
     color: #5268d7;
   }
-.services_bg ul#nav > li > a{
-  color: #fff;
-}
+  .services_bg ul#nav > li > a{
+    color: #fff;
+  }
 
 
   /*------
@@ -244,9 +244,9 @@ li.has_submenu ul{
       transform: translateY(46px);}
     }
     .clients img {
-    width: 800px;
-    max-width: 100%;
-}
+      width: 800px;
+      max-width: 100%;
+    }
     /*-- voucher --*/
     .voucher-page {
       position: relative;
@@ -362,38 +362,7 @@ li.has_submenu ul{
       margin: 30px 0 15px;
       font-weight: 600;
     }
-    .portfolio-container{
-      text-align: center;
-    }
-    .portfolio-container > a {
-      padding: 50px 30px;
-      border-radius: 15px;
-      box-shadow: 0px 0px 25px #ddd;
-      display: inline-block;
-      width: 22%;
-      vertical-align: top;
-      background: #ffff;
-      margin-right: 50px;
-    }
-    .portfolio-container > a:nth-child(4n){
-      margin-right: 0;
-    }
-    .portfolio-container > a:nth-child(-n+6){
-      margin-bottom: 50px;
-    }
-    .portfolio-container > a img{
-      -webkit-transition: all 0.5s ease-out;  
-      -moz-transition: all 0.5s ease-out;   
-      -o-transition: all 0.5s ease-out;  
-      transition: all 0.5s ease-out;  
-      box-shadow: 0px 0px 25px #ddd;
-      -webkit-filter: grayscale(100%); 
-      filter: grayscale(100%);
-    }
-    .portfolio-container > a:hover img{
-      -webkit-filter: grayscale(0); 
-      filter: grayscale(0);
-    }
+
     .testimonials{
       padding: 100px 0;
       background: rgb(165,106,184); /* Old browsers */
@@ -445,7 +414,7 @@ li.has_submenu ul{
       width: 30%;
     }
     .testimonial_info{
-           width: 69%;
+      width: 69%;
       font-size: 18px;
       line-height: 20px;
     }
@@ -466,10 +435,10 @@ li.has_submenu ul{
       margin: 0;
     }
     /*-- contact us --*/
-#small-content {
-    padding: 10% 0 0;
-    min-height: calc(100vh - 93px);
-}
+    #small-content {
+      padding: 10% 0 0;
+      min-height: calc(100vh - 93px);
+    }
     .left-container {
       background: #fff;
       box-shadow: 0 0 5px #ccc;
@@ -545,170 +514,135 @@ li.has_submenu ul{
       min-height: 165px;
     }
     /*-- portfolio --*/
-    #portfolio {
-      background: url(../images/portofoliu.png);
-      background-size: cover;
-      background-position: center;
+    #portfolio .container-top{
+      position: relative;
+      top: auto;
+      padding: 30px 0;
     }
-    .portfolio-content > a {
-      padding: 50px 30px;
-      border-radius: 15px;
-      box-shadow: 0px 0px 25px #ddd;
-      display: inline-block;
-      width: 22%;
-      vertical-align: top;
-      background: #ffff;
-      margin-right: 50px;
+    #portfolio .custom-container{
+      width: 1800px;
+    }
+    .portfolio-page > div {
+      width: 25%;
+      overflow: hidden;
+      float: left;
+      cursor: pointer;
       position: relative;
     }
-    .portfolio-content > a:nth-child(4n){
-      margin-right: 0;
-    }
-    .portfolio-content > a:nth-child(-n+6){
-      margin-bottom: 50px;
-    }
-    .portfolio-content > a::after{
+    .portfolio-page > div::after{
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      content: '';
-      background: rgba(101,171,200,0.9);
-      border-radius: 15px;
-      transform: scale(0);
-      transition: 0.3s all ease-out;
+      background: rgba(0,0,0,0.75);
+      opacity: 0;
+      transition: 0.5s all ease-out;
     }
-    .portfolio-overlay{
+    .portfolio-page > div:hover::after{
+      opacity: 1;
+      transition: 0.5s all ease-in;
+    }
+    .portfolio-page > div:hover img{
+      transform: scale(1.1);
+      transition: 0.5s all ease-in;
+    }
+    .portfolio-page > div img{
+      transition: 0.5s all ease-out;
+    }
+
+    .project-name{
       position: absolute;
-      transform: translateY(-50%) scale(0);
-      top: 50%;
       left: 0;
       right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      font-size: 30px;
+      color: #fff;
+    opacity: 0;
+      transition: 0.6s all ease-out;
       z-index: 9;
-      transition: 0.3s all ease-out;
     }
-    .portfolio-content > a:hover::after {
-      transform: scale(1);
-      transition: 0.5s all ease-out;
+    .portfolio-page > div:hover .project-name{
+    opacity: 1;
+      transition: 0.6s all ease-in;
     }
-    .portfolio-content > a:hover .portfolio-overlay{
-      transform: translateY(-50%) scale(1);
-      transition: 0.5s all ease-out;
+    /*-- services --*/
+    .services_bg{
+      background: rgb(81,104,215); /* Old browsers */
+      background: -moz-linear-gradient(-45deg, rgba(81,104,215,1) 0%, rgba(97,105,209,1) 35%, rgba(140,105,194,1) 64%, rgba(165,106,184,1) 93%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg, rgba(81,104,215,1) 0%,rgba(97,105,209,1) 35%,rgba(140,105,194,1) 64%,rgba(165,106,184,1) 93%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg, rgba(81,104,215,1) 0%,rgba(97,105,209,1) 35%,rgba(140,105,194,1) 64%,rgba(165,106,184,1) 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5168d7', endColorstr='#a56ab8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     }
-    .portfolio-overlay b {
-      display: block;
-      font-size: 16px;
-      line-height: 16px;
+    .services_bg .custom-label label{
+      color: #fff;
     }
-    .portfolio-overlay span{
-      font-size: 12px;
+    .services_bg .left-container::after {
+      background: url(../images/services_bg.png) no-repeat;
+      z-index: 9;
+      top: 0px;
     }
-    #all-projects {
-    display: block;
-}
-.portfolio-content{
-  display: none;
-}
-.projects-menu {
-    margin-bottom: 40px;
-}
-.projects-menu > a{
-    background: #fff; /* Old browsers */
-    margin: 0 50px 0 0;
-    color: #6f6f6f;
-    border: 2px solid #6b68cd;
-    box-shadow: none;
-}
-.projects-menu > a:last-child{
-  margin-right: 0;
-}
-.projects-menu > a:hover{
-    background: rgb(165,106,184); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(165,106,184,1) 7%, rgba(140,105,194,1) 36%, rgba(97,105,209,1) 65%, rgba(81,104,215,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(165,106,184,1) 7%,rgba(140,105,194,1) 36%,rgba(97,105,209,1) 65%,rgba(81,104,215,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(165,106,184,1) 7%,rgba(140,105,194,1) 36%,rgba(97,105,209,1) 65%,rgba(81,104,215,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a56ab8', endColorstr='#5168d7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    color: #fff;
-}
-#portfolio .page_title{
-  margin: 0 auto 40px;
-  padding-top: 150px;
-}
-/*-- services --*/
-.services_bg{
-   background: rgb(81,104,215); /* Old browsers */
-    background: -moz-linear-gradient(-45deg, rgba(81,104,215,1) 0%, rgba(97,105,209,1) 35%, rgba(140,105,194,1) 64%, rgba(165,106,184,1) 93%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(81,104,215,1) 0%,rgba(97,105,209,1) 35%,rgba(140,105,194,1) 64%,rgba(165,106,184,1) 93%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(81,104,215,1) 0%,rgba(97,105,209,1) 35%,rgba(140,105,194,1) 64%,rgba(165,106,184,1) 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5168d7', endColorstr='#a56ab8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-.services_bg .custom-label label{
-  color: #fff;
-}
-.services_bg .left-container::after {
-    background: url(../images/services_bg.png) no-repeat;
-    z-index: 9;
-    top: 0px;
-}
   /*------
   RESPONSIVE CSS
   ------ */
-@media (max-width: 1680px){
-  .geometric::before{
-    width: 90%;
+  @media (max-width: 1680px){
+    .geometric::before{
+      width: 90%;
+    }
   }
-}
   @media (max-width: 1440px){
-  .custom-container, .parallax .v-align .row{
-    width: 1280px;
-  }
-  .services-container > div:nth-child(2){
-    margin: 0 5%;
-  }
-  .testimonial_info{
-    width: 65%;
-  }
-  .portfolio-container > a{
-    width: 20%;
-    padding: 30px;
-  }
+    .custom-container, .parallax .v-align .row{
+      width: 1280px;
+    }
+    .services-container > div:nth-child(2){
+      margin: 0 5%;
+    }
+    .testimonial_info{
+      width: 65%;
+    }
+    .portfolio-container > a{
+      width: 20%;
+      padding: 30px;
+    }
   }
   @media (max-width: 1280px){
     .home-contact .row > div {
-    padding: 0;
-}
-.home-contact .row > div.center{
-  text-align: right;
-}
-.portfolio-container > a {
-    width: 21.7%;
-    padding: 20px;
-}
+      padding: 0;
+    }
+    .home-contact .row > div.center{
+      text-align: right;
+    }
+    .portfolio-container > a {
+      width: 21.7%;
+      padding: 20px;
+    }
     .geometric{
       text-align: right;
       overflow: hidden;
     }
     .geometric::before {
-    width: 75%;
-    top: 0;
-    background-size: 100%;
-    margin: 0 auto;
-}
-.container-top .row > div, .container-fluid, .navbar.navbar-default.navbar-inverse {
-    padding: 0;
-}
-#main_nav {
-    margin: 10px 0;
-}
-.laptop {
-    margin: 90px auto;
-    width: 90%;
-}
-.custom-container {
-  padding: 0 15px;
-}
-     .custom-container.pad{
+      width: 75%;
+      top: 0;
+      background-size: 100%;
+      margin: 0 auto;
+    }
+    .container-top .row > div, .container-fluid, .navbar.navbar-default.navbar-inverse {
+      padding: 0;
+    }
+    #main_nav {
+      margin: 10px 0;
+    }
+    .laptop {
+      margin: 90px auto;
+      width: 90%;
+    }
+    .custom-container {
+      padding: 0 15px;
+    }
+    .custom-container.pad{
       padding: 100px 15px;
     }
     .testimonial_wrap:nth-child(2){
